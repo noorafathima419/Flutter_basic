@@ -23,7 +23,7 @@ class _FooduiWidgetsState extends State<FooduiWidgets> {
               decoration: BoxDecoration(
                   color: Colors.amberAccent,
                   image: DecorationImage(
-                      image: AssetImage("Assets/download.jpeg"),
+                      image: AssetImage("Assets/deliverboys.png"),
                       fit: BoxFit.cover)),
               height: 300,
               width: 300,
@@ -103,7 +103,7 @@ class _FooduiWidgetsState extends State<FooduiWidgets> {
                   " There are more then 200 items ",
                   style: TextStyle(
                       color: Colors.black,
-                      fontSize: 16,
+                      fontSize: 20,
                       fontWeight: FontWeight.w900),
                 ),
               ),
@@ -112,7 +112,11 @@ class _FooduiWidgetsState extends State<FooduiWidgets> {
           Column(
             children: [
               Row(
-                children: [SizedBox(height: 70,width: 30,),
+                children: [
+                  SizedBox(
+                    height: 150,
+                    width: 30,
+                  ),
                   Container(
                     child: Center(
                       child: Text(
@@ -126,31 +130,28 @@ class _FooduiWidgetsState extends State<FooduiWidgets> {
                     decoration: BoxDecoration(
                         color: Colors.red,
                         borderRadius: BorderRadius.circular(20)),
-                    height: 80,
+                    height: 60,
                     width: 350,
                   )
                 ],
-              ),Row(
-                children: [
-                  SizedBox(
-                    height: 10,
-                    width: 25,
-                  ),
-                  SizedBox(
-                    height: 40,
-                    width: 60,
-                  ),
+              ),
+            ],
+          ),
+          Column(
+            children: [SizedBox(height: 10,width: 25,),
+              Row(
+                children: [SizedBox(height: 40,width: 60,),
                   Center(
                     child: Text(
-                      " Dont't have anaccount? sign up ",
+                      "Don't have an account?sign in",
                       style: TextStyle(
                           color: Colors.black,
-                          fontSize: 16,
-                          fontWeight: FontWeight.w900),
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold),
                     ),
-                  ),
+                  )
                 ],
-              ),
+              )
             ],
           )
         ],
